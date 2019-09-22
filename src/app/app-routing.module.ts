@@ -7,14 +7,19 @@ import {ContentComponent} from "./content/content.component";
 import { ContactsComponent } from './content/contacts/contacts.component';
 import { GalleryComponent } from './content/gallery/gallery.component';
 import { HomeComponent } from './content/home/home.component';
-
+import { AppComponent } from './app.component';
+import { SiteComponent } from './content/site/site.component';
+import { Site2Component } from './content/site2/site2.component';
 
 const routes: Routes = [
-  {path: '',component:ContentComponent},
+
+  {path: 'app',component:AppComponent},
   {path:'about',component:AboutComponent},
   {path:'contacts',component:ContactsComponent},
   {path:'gallery',component:GalleryComponent},
   {path:'home',component:HomeComponent},
+  {path:'site',component:SiteComponent},
+  {path:'site2',component:Site2Component},
   {path:'**',component:PageNotFoundComponent}
 ];
 

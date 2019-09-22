@@ -10,6 +10,11 @@ import { AboutComponent } from './content/about/about.component';
 import { ContactsComponent } from './content/contacts/contacts.component';
 import { GalleryComponent } from './content/gallery/gallery.component';
 import { HomeComponent } from './content/home/home.component';
+import { SiteComponent } from './content/site/site.component';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { FilfCompComponent } from './content/site/filf-comp/filf-comp.component';
+import { Site2Component } from './content/site2/site2.component';
+
 
 @NgModule({
   declarations: [
@@ -21,11 +26,16 @@ import { HomeComponent } from './content/home/home.component';
     AboutComponent,
     ContactsComponent,
     GalleryComponent,
-    HomeComponent
+    HomeComponent,
+    SiteComponent,
+    FilfCompComponent,
+    Site2Component,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
