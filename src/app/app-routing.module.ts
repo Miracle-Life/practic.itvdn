@@ -12,19 +12,19 @@ import { SiteComponent } from './content/site/site.component';
 import { Site2Component } from './content/site2/site2.component';
 
 const routes: Routes = [
-
-  {path: 'app',component:AppComponent},
-  {path:'about',component:AboutComponent},
-  {path:'contacts',component:ContactsComponent},
-  {path:'gallery',component:GalleryComponent},
-  {path:'home',component:HomeComponent},
-  {path:'site',component:SiteComponent},
-  {path:'site2',component:Site2Component},
-  {path:'**',component:PageNotFoundComponent}
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: 'app', component: AppComponent},
+  {path: 'about', component: AboutComponent},
+  {path: 'contacts', component: ContactsComponent},
+  {path: 'gallery', component: GalleryComponent},
+  {path: 'home', component: HomeComponent},
+  {path: 'site', component: SiteComponent},
+  {path: 'site2', component: Site2Component},
+  {path: '**', component: PageNotFoundComponent}
 ];
 
 @NgModule({
-  declarations:[],
+  declarations: [ ],
   imports: [
     CommonModule,
     RouterModule.forRoot(routes)

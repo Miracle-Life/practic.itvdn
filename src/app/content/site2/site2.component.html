@@ -1,1 +1,17 @@
-<p>site2 works!</p>
+<div class="container">
+  <h1>Gallery</h1>
+  <div class="slider">
+    <!-- <img [style.opacity]="cur" *ngFor="let item of gallery" src="{{item}}" alt=""> -->
+    <img class="card-img" src="https://images.wallpaperscraft.ru/image/krysha_lestnitsa_zdanie_148069_1280x720.jpg" alt="">
+    <img class="card-img" src="https://images.wallpaperscraft.ru/image/pirs_siluety_temnyj_148071_1280x720.jpg" alt="">
+    <img class="card-img" src="https://images.wallpaperscraft.ru/image/balkon_okno_teleskop_148073_1280x720.jpg" alt="">
+    <img class="card-img" src="https://images.wallpaperscraft.ru/image/nochnoj_gorod_zdaniia_arhitektura_148065_1280x720.jpg" alt="">
+    <img class="card-img" src="https://images.wallpaperscraft.ru/image/kosmicheskij_vzryv_linii_formy_137586_2560x1080.jpg" alt="">
+
+  </div>
+  <div class="btns">
+    <button class="btn-dark" (click)="prev()">prev</button>
+    <button class="btn-dark" (click)="next()">next</button>
+  </div>
+
+</div>
