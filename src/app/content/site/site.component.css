@@ -1,0 +1,7 @@
+.film_scroll{
+  height: 500px; width: 1100px;/* размер */
+  position: relative;
+  margin:  auto;/* отцентровка */
+  background: gray;
+  overflow: scroll;
+}

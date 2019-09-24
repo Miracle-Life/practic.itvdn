@@ -1,0 +1,18 @@
+.menu{
+  display: flex;
+  list-style: none;
+  /*justify-content: center;*/
+}
+.menu li a{
+  padding: 10px;
+  text-decoration: none;
+}
+.menu li a:hover{
+  /*background: darkcyan;*/
+}
+header{
+  /*background: aqua;*/
+}
+.menu li{
+  margin: 0 10px;
+}

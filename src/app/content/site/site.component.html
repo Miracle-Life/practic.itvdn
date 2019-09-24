@@ -1,0 +1,32 @@
+<!--<div class="film_scroll">-->
+<!--  -->
+<!--<div *ngFor="let item of films" class="container">-->
+
+<!--  Оригинальное название фильма:  <br>-->
+<!--  {{item.original_title}},<br><br>-->
+<!--  Название фильма:<br>{{item.title}}<br><br>-->
+<!--  Дата релиза:  <br>  {{item.release_date}}<br><br>-->
+<!--  Описание фильма:<br>{{item.overview}}<br><br>-->
+<!--  Рейтинг фильма:  {{item.vote_average}}<br><br>-->
+<!--  <img src="https://image.tmdb.org/t/p/w500_and_h282_face{{item.poster_path}}" alt="">-->
+
+
+<!--</div>-->
+
+<!--</div>-->
+<div class="film_scroll container">
+
+  <div *ngFor="let item of films" class="container">
+   <app-filf-comp [film]="item" ></app-filf-comp>
+
+  </div>
+  <button (click)="goLeft()" title="Перейти на страницу назад">&lt;</button>
+  <button  (click)="goRight()" title="Перейти на страницу вперед">&gt;</button>
+</div>
+
+<!--<div>-->
+<!--&lt;!&ndash;  <h2>{{nameFilms}}</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;  <h4>{{dataRelise}}</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;  <h4>{{about}}</h4>&ndash;&gt;-->
+
+<!--</div>-->
