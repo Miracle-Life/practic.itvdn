@@ -13,7 +13,10 @@ export class Site2Component implements OnInit {
 
   next() {
     // tslint:disable-next-line:max-line-length
-   document.querySelector('.slider').insertBefore(document.querySelector('.slider img:last-child'), document.querySelector('.slider img:first-child') );
+   document.querySelector('.slider').insertBefore(
+     document.querySelector('.slider img:last-child'),
+     document.querySelector('.slider img:first-child')
+   );
   }
   prev() {
     document.querySelector('.slider').appendChild(document.querySelector('.slider img:first-child'));

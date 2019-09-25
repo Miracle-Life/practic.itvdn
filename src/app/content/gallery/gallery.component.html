@@ -27,14 +27,15 @@
   <hr>
   <div class="items">
     <div *ngFor="let item of cards" class="item">
+     <img src="{{item.thumbnailUrl}}">
       <h5 class="title">
         {{ item.title }}
       </h5>
-      <div class="descr">
-        <p>
-          {{ item.text }}
-        </p>
-      </div>
+<!--      <div class="descr">-->
+<!--        <p>-->
+<!--          {{ item.text }}-->
+<!--        </p>-->
+<!--      </div>-->
     </div>
     <!-- item -->
   </div>
